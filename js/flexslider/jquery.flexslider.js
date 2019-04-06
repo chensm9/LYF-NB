@@ -82,7 +82,7 @@
             slider.css({"position": "relative"}).height(slider.slides.filter(':first').height());
             slider.args[slider.prop] = (slider.transitions) ? "translate3d(0," + sliderOffset * slider.height() + "px,0)" : sliderOffset * slider.height() + "px";
             slider.container.css(slider.args);
-          }, 100);
+          }, 50);
 
         } else {
           slider.args[slider.prop] = (slider.transitions) ? "translate3d(" + sliderOffset * slider.width() + "px,0,0)" : sliderOffset * slider.width() + "px";
@@ -90,7 +90,7 @@
           //Timeout function to give browser enough time to get proper width initially
           setTimeout(function() {
             slider.newSlides.width(slider.width()).css({"float": "left", "display": "block"});
-          }, 100);
+          }, 50);
         }
         
       } else { //Default to fade
