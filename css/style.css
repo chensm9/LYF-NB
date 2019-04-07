@@ -1493,6 +1493,10 @@ a.scrollup i:hover {
 	text-align:center;
 }
 
+.aligncenter h2 {
+	margin-top: 2%;
+}
+
 .aligncenter span{
 	margin-left:0;
 }
